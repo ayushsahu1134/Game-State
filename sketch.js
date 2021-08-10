@@ -21,7 +21,17 @@ game=new Game();
 }
 
 function draw(){
-    background("aliceblue");
+    background("blue");
+if (playerCount == 4){
+    game.updateState(1)
+    
+    if(gameState===1){
+        clear();
+        game.play();
+    }
+
+}
+
 }
 
 
